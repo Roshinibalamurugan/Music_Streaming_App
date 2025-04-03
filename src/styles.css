@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #6a0dad, #ff1493);
+  color: white;
+  text-align: center;
+}
+
+.login-container, .home-container, .playlist-container, .profile-container {
+  max-width: 90%;
+  margin: auto;
+  padding: 20px;
+  background: rgba(34, 34, 34, 0.9);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(255, 20, 147, 0.6);
+}
+
+input, button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background: linear-gradient(90deg, #9400D3, #FF1493);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #a020f0, #ff69b4);
+  box-shadow: 0px 0px 10px rgba(255, 105, 180, 0.7);
+}
+
+.navbar {
+  background: linear-gradient(90deg, #8a2be2, #ff1493);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 0px 2px 10px rgba(138, 43, 226, 0.5);
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Updated Song List to make songs inline */
+.song-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px;
+}
+
+.song-card {
+  background: #333;
+  padding: 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  width: 180px;
+  text-align: center;
+}
+
+.song-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 5px;
+}
+
+.song-card.playing {
+  border: 2px solid #ff1493;
+  box-shadow: 0px 0px 15px #ff69b4;
+  background: rgba(34, 34, 34, 0.9);
+}
+
+.music-player {
+  background: rgba(68, 68, 68, 0.9);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.music-player img {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+}
+
+.now-playing {
+  font-weight: bold;
+  color: #ff1493;
+  font-size: 16px;
+}
+
+.profile-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background: rgba(34, 34, 34, 0.9);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(255, 20, 147, 0.6);
+}
+
+.profile-card {
+  background: #333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #ff1493;
+}
